@@ -1,0 +1,23 @@
+{
+  "name": "gautamgadipudi.github.io",
+  "version": "1.0.0",
+  "description": "N3M3SiS' website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GautamGadipudi/gautamgadipudi.github.io.git"
+  },
+  "author": "Gautam Gadipudi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GautamGadipudi/gautamgadipudi.github.io/issues"
+  },
+  "homepage": "https://github.com/GautamGadipudi/gautamgadipudi.github.io#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.1"
+  }
+}
