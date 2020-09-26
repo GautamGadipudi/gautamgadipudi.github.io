@@ -1,0 +1,104 @@
+body{
+    width: 1300px;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header{
+    width: 100%;
+    height: fit-content;
+}
+
+.nav-container{
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    overflow: auto;
+    border-radius: 20px;
+}
+
+.nav-container a{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 10px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.nav-container a:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.content{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.inner-content{
+    padding: 0px 20px;
+}
+
+.author-name-container{
+    width: 100%;
+    font-family: "Chalkduster", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.author-image-container{
+    float: left;
+    padding: 15px 0px;
+    width: 25%; 
+}
+
+.author-image{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+    margin: 30px;
+}
+
+.author-summary-container{
+    float: right;
+    width: 75%;
+}
+
+.author-summary-container p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.footer{
+    background-color: white;
+    min-height: 40px;
+    padding-right: 25px;
+    margin: -10px;
+    border-radius: 0px 0px 50px 50px ;
+}
+
+.copyrights p{
+    color: black;
+    height: 20px;
+    text-align: right;
+    padding: 0.05em 0em;
+}
+
+.tab{
+    tab-size: 4;
+}

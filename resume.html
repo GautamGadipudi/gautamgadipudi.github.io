@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GG - Resume</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="author-name-container">
+            <h1>Gautam Gadipudi</h1>
+        </div>
+    </div>
+
+    <div class="nav-container">
+        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+        <a href="./resume.html"><i class="fa fa-file"></i> Resume</a>
+        <a href="./education.html"><i class="fa fa-graduation-cap"></i> Education</a>
+        <a href="./personal.html"><i class="fa fa-futbol-o"></i> Personal</a>
+    </div>
+
+    <div class="content">
+        <div class="inner-content">
+            <form action="./assets/media/me_100x100.jpg" method="get">
+                <a class="download-pdf-btn" target="_blank" href="./assets/files/GautamGadipudiResume.pdf" download>Download PDF <i class="fa fa-download"></i></a>
+                <!-- <button class="download-pdf-btn">Download PDF <i class="fa fa-download"></i></button> -->
+            </form>
+            <div class="experience-container">
+                <h2>Technical Skills</h2>
+
+                <div class="experience-card">
+                    <div class="skills-outer">
+                        <div class="skills-inner end">
+                            <h3>Languages</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C#</li>
+                                <li>JavaScript</li>
+                                <li>C++</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-inner">
+                            <h3>Backend programming</h3>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>.NET MVC</li>
+                                <li>.NET Core</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-inner">
+                            <h3>Frontend programming</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JQuery</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-inner">
+                            <h3>Database and caching</h3>
+                            <ul>
+                                <li>mongoDB</li>
+                                <li>PostgreSQL</li>
+                                <li>Apache Spark</li>
+                                <li>Redis</li>
+                                <li>MS SQL Server</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills-inner end">
+                            <h3>Other</h3>
+                            <ul>
+                                <li>Git</li>
+                                <li>Jenkins</li>
+                                <li>Docker</li>
+                                <li>Socket.io</li>
+                                <li>Firebase</li>
+                                <li>AWS</li>
+                                <li>MATLAB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div class="experience-container">
+                <h2>Professional Experience</h2>
+
+                <div class="experience-card">
+                    <div class="experince-header">
+                        <span>Full Stack Developer</span>
+                        <span>DeltaX</span>
+                        <span>Aug 2018 - Jun 2019</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Part of the tracking team - responsible for tracking ad events (clicks, views and
+                                conversions) and ad data (geolocation of event, source, cart details, coupon code,
+                                affiliate details etc.).</li>
+                            <li>Develop multiple microservices using .NET and .NET Core framework that fetch data from
+                                different sources (Facebook Marketing API, Google AdWords API, AWS S3 storage etc.),
+                                process this data and dump this processed data to required relational or non-relational
+                                databases.</li>
+                            <li>Develop and integrate the frontend for new features onto the DeltaX web application
+                                using VueJS, JQuery and Bootstrap.</li>
+                            <li>Reduce load time for many user-facing web pages by caching the processed data in Redis.
+                            </li>
+                            <li>Follow BDD (Behavior Driven Development) for developing backend and microservices’ code.
+                                Use Git for version control, Jenkins pipelines to build and deploy services, multiple
+                                AWS applications and Jira for issue tracking.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experince-header">
+                        <span>Full Stack Developer Intern</span>
+                        <span>DeltaX</span>
+                        <span>Jan 2018 - Jun 2018</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Develop a microservice to dump Facebook’s lead forms to Google Sheets using Google
+                                Sheets API and C#. Understand the usage of Facebook graph API and Amazon S3 storage.
+                            </li>
+                            <li>Develop two major cross-browser extensions using VueJS, one extension to aid the clients
+                                in launching new ads and campaigns, the other extension to track the different ad events
+                                triggered in a webpage upon performing different actions.</li>
+                            <li>Understand the different stages of an ad, how an ad on the internet is tracked and why
+                                the vast data from an ad is important to a company.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experince-header">
+                        <span>Backend Web Developer Intern</span>
+                        <span>Techmojo Solutions Pvt. Ltd.</span>
+                        <span>Jan 2018 - Jun 2018</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Work on a product ROKA – Fintech platform for business expensing and Travel management.
+                            </li>
+                            <li>Develop a feature that pushes the balance amount information in the customer’s e-wallet
+                                in real time. Use NodeJS, Redis publisher-subscriber model to store the customer balance
+                                information sent by the publisher and fetch this balance information through a
+                                subscriber.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="copyrights">
+            <p>
+                Copyright 2020 Gautam Gadipudi <br />
+                All rights reserved
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

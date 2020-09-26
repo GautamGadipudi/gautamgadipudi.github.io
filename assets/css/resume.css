@@ -1,0 +1,87 @@
+.experience-container{
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.experience-card {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 30px 0px;
+}
+
+.experince-header{
+    position: relative;
+    width: 100%;
+    min-height: 30px;
+    color: white;
+    border-bottom: 1px solid white;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.experince-header span{
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    height: 30px;
+    padding: 5px 0px;
+    font-weight: bolder;
+}
+
+.experience-content{
+    padding-right: 10px;
+}
+
+.experience-content li{
+    text-align: justify;
+    line-height: 25px;
+    padding: 5px 0px;
+}
+
+.skills-outer{
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+}
+
+.skills-inner{
+    width: 19.9%;
+    float: left;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    min-height: inherit;
+}
+
+.skills-inner h3{
+    text-align: center;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+.skills-outer .end{
+    border: none;
+}
+
+.download-pdf-btn{
+    width: 15%;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    float: right;
+    text-decoration: none;
+    text-align: center;
+}
+
+.download-pdf-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 10px;
+}
