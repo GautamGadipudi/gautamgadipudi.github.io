@@ -27,7 +27,8 @@
     <div class="content">
         <div class="inner-content">
             <form action="./assets/media/me_100x100.jpg" method="get">
-                <a class="download-pdf-btn" target="_blank" href="./assets/files/GautamGadipudiResume.pdf" download>Download PDF <i class="fa fa-download"></i></a>
+                <a class="download-pdf-btn" target="_blank" href="./assets/files/GautamGadipudi_Resume_2025.pdf"
+                    download>Download PDF <i class="fa fa-download"></i></a>
                 <!-- <button class="download-pdf-btn">Download PDF <i class="fa fa-download"></i></button> -->
             </form>
             <div class="experience-container">
@@ -98,46 +99,72 @@
 
                 <div class="experience-card">
                     <div class="experince-header">
-                        <span>Full Stack Developer</span>
-                        <span>DeltaX</span>
-                        <span>Aug 2018 - Jun 2019</span>
+                        <span>Software Engineer III (Cloud)</span>
+                        <span>Hewlett Packard Enterprise</span>
+                        <span>Jan 2022 - Present</span>
                     </div>
                     <div class="experience-content">
                         <ul>
-                            <li>Part of the tracking team - responsible for tracking ad events (clicks, views and
-                                conversions) and ad data (geolocation of event, source, cart details, coupon code,
-                                affiliate details etc.).</li>
-                            <li>Develop multiple microservices using .NET and .NET Core framework that fetch data from
-                                different sources (Facebook Marketing API, Google AdWords API, AWS S3 storage etc.),
-                                process this data and dump this processed data to required relational or non-relational
-                                databases.</li>
-                            <li>Develop and integrate the frontend for new features onto the DeltaX web application
-                                using VueJS, JQuery and Bootstrap.</li>
-                            <li>Reduce load time for many user-facing web pages by caching the processed data in Redis.
-                            </li>
-                            <li>Follow BDD (Behavior Driven Development) for developing backend and microservices’ code.
-                                Use Git for version control, Jenkins pipelines to build and deploy services, multiple
-                                AWS applications and Jira for issue tracking.</li>
+                            <li>Engineered solutions for the air-gapped, on-premise deployment of HPE’s GreenLake Cloud
+                                Platform (GLCP) - contributing to the successful GA (General Availability) release of
+                                the platform, used by multiple enterprise customers in highly regulated sectors.
+                                Maintained regular release cadence for the same.</li>
+                            <li>Built a custom Linux-based platform featuring a multi-node Kubernetes cluster, highly
+                                available replicated data plane, Golang-based system management tools, and a terminal UI
+                                for system interaction - designed for scalable deployments and 99.9%+ system
+                                availability in production environments.</li>
+                            <li>Developed secure, compliance-focused software by building FIPS-compliant OS and
+                                Kubernetes components, remediating CVEs in Docker images, and hardening the Linux file
+                                system to meet requirements for highly regulated environments - contributing to security
+                                audit readiness and alignment with FedRAMP and other regulatory frameworks.</li>
+                            <li>Automated CI/CD pipelines with GitHub Actions to build, package, and deploy the full
+                                infrastructure stack as Virtual Machines, enhancing developer productivity and ensuring
+                                fast, stable, and error-free releases.</li>
+                            <li>Collaborated with internal HPE teams to support integration of their software packages
+                                on top of our platform, and coordinated with external vendors such as OpenEBS and
+                                Canonical (MicroK8s) to manage new features and upstream releases.</li>
+                            <li>Designed and implemented a comprehensive observability stack using Prometheus, Grafana,
+                                and custom exporters to monitor internal systems, enabling real-time alerting and system
+                                diagnostics across distributed environments.</li>
+                            <li>Delivered tech-preview of GLCP Local Gateway - a secure gateway running in customers’
+                                datacenter to manage incoming/outgoing traffic from HPE Onprem-devices (like storage
+                                arrays and compute devices) to the cloud.</li>
+                            <li>Delivered tech-preview of Infosight AppInsights - an application level (in a standard
+                                networking OSI stack) monitoring tool to collect performance metrics and configuration
+                                details from disparate data sources across domains, such as logs, telemetry, and other
+                                sources.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="experience-card">
                     <div class="experince-header">
-                        <span>Full Stack Developer Intern</span>
+                        <span>Full Stack Developer</span>
                         <span>DeltaX</span>
-                        <span>Jan 2018 - Jun 2018</span>
+                        <span>Jan 2018 - Jun 2019</span>
                     </div>
                     <div class="experience-content">
                         <ul>
-                            <li>Develop a microservice to dump Facebook’s lead forms to Google Sheets using Google
-                                Sheets API and C#. Understand the usage of Facebook graph API and Amazon S3 storage.
+                            <li>Developed backend services using the .NET framework to collect ad metadata and track
+                                events from multiple data sources like Google Ads, Facebook Ads, and Twitter Ads.
+                                Processed high-volume data from SQL, NoSQL, and cloud databases to generate scheduled
+                                performance reports (daily to yearly) for over 50 clients.</li>
+                            <li>Followed Behavior Driven Development (BDD) to define clear, testable user scenarios,
+                                improve collaboration between developers and QA, and ensure alignment with business
+                                requirements throughout the development lifecycle.</li>
+                            <li>Innovate and contribute to the engineering blog regularly to share technical learnings,
+                                promote engineering best practices, and showcase team achievements to the broader
+                                developer community.</li>
+                            <li>Built and maintained user-facing features with Vue.js to visualize and manage ad
+                                tracking data, resulting in a more modular, maintainable frontend codebase and
+                                significantly reduced page load times for end users.
                             </li>
-                            <li>Develop two major cross-browser extensions using VueJS, one extension to aid the clients
-                                in launching new ads and campaigns, the other extension to track the different ad events
-                                triggered in a webpage upon performing different actions.</li>
+                            <li>Developed cross-browser extensions using Vue.js and vanilla JavaScript, enabling users
+                                to view ad events captured on web pages and generate ad campaign links directly within
+                                the browser for faster campaign setup.</li>
                             <li>Understand the different stages of an ad, how an ad on the internet is tracked and why
-                                the vast data from an ad is important to a company.</li>
+                                the vast data from an ad is important to a company.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -150,12 +177,14 @@
                     </div>
                     <div class="experience-content">
                         <ul>
-                            <li>Work on a product ROKA – Fintech platform for business expensing and Travel management.
+                            <li>Designed and implemented a “real-time” backend feature in Node.js to deliver instant
+                                e-wallet balance updates to users via Redis Pub/Sub and Socket.io, enabling seamless
+                                synchronization between backend transactions and frontend displays. This reduced latency
+                                in balance updates and improved the user experience.
                             </li>
-                            <li>Develop a feature that pushes the balance amount information in the customer’s e-wallet
-                                in real time. Use NodeJS, Redis publisher-subscriber model to store the customer balance
-                                information sent by the publisher and fetch this balance information through a
-                                subscriber.</li>
+                            <li>Followed Test-Driven Development (TDD) principles using Mocha to write unit tests
+                                upfront to guide implementation and ensure long-term maintainability.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -166,7 +195,7 @@
     <div class="footer">
         <div class="copyrights">
             <p>
-                Copyright 2020 Gautam Gadipudi <br />
+                Copyright 2025 Gautam Gadipudi <br />
                 All rights reserved
             </p>
         </div>
