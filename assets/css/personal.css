@@ -2,32 +2,3 @@
     line-height: 25px;
     padding: 30px;
 }
-
-/* 
-    body {
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      background: #f0f0f0;
-      font-family: Arial, sans-serif;
-    } */
-
-.flip-box {
-    perspective: 1000px;
-}
-
-.flip-content {
-    display: inline-block;
-    padding: 20px 40px;
-    background: #4a90e2;
-    color: white;
-    font-size: 2rem;
-    border-radius: 10px;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip {
-    transform: rotateX(180deg);
-}
