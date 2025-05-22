@@ -106,6 +106,7 @@ body{
 
 .flip-box {
     perspective: 1000px;
+    display: inline-block;
 }
 
 .flip-content {
@@ -113,7 +114,7 @@ body{
     padding: 20px 40px;
     background: #4a90e2;
     color: white;
-    font-size: 2rem;
+    font-size: 5rem;
     border-radius: 10px;
     transition: transform 0.6s;
     transform-style: preserve-3d;
