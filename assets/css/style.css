@@ -111,10 +111,10 @@ body{
 
 .flip-content {
     display: inline-block;
-    padding: 20px 40px;
+    padding: 5px 10px;
     background: #000;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius: 10px;
     transition: transform 0.6s;
     transform-style: preserve-3d;
