@@ -31,8 +31,13 @@
 
             <div class="author-summary-container">
                 <h3>Current career objective</h3>
-                <p>I am an aspiring full stack developer and a software developer, passionate about web technologies,
-                    big data and open source software.</p>
+                <!-- <p>I am an aspiring full stack developer and a software developer, passionate about web technologies,
+                    big data and open source software.</p> -->
+
+
+                <div class="flip-box">
+                    <div id="flipText" class="flip-content">Hello</div>
+                </div>
 
                 <h3>Journey so far...</h3>
                 <p>As a kid my first awe inspiring moment with technology was when it enabled millions of people book
@@ -53,15 +58,27 @@
                     following the documentation provided on my GitHub. And I intend to remain an active contributor to
                     the open source stack for life.</p>
                 <p>In my final semester of undergrad, I interned with DeltaX (an AdTech company that was chosen for the
-                    10th Edition
-                    of Blackbox Connect Winter 2015 programme at Silicon Valley), where I developed multiple
-                    cross-browser extensions that help the company clients in managing their advertisements on Google,
-                    Facebook, Bing and many more platforms. After successfully completing the internship, DeltaX offered
-                    me a full-time employment for the role of a full-stack developer. I am very grateful to the
+                    10th Edition of Blackbox Connect Winter 2015 programme at Silicon Valley), where I developed
+                    multiple cross-browser extensions that help the company clients in managing their advertisements on
+                    Google, Facebook, Bing and many more platforms. After successfully completing the internship, DeltaX
+                    offered me a full-time employment for the role of a full-stack developer. I am very grateful to the
                     engineering team at DeltaX as I was given the opportunity to learn and build modern full-stack
                     applications.</p>
-                <p>I am currently pursuing my masters degree in Computer Science at Rochester Institute of Technology in
-                    NY state.</p>
+                <p>Following my industry experience, I pursued my Master’s in Computer Science at Rochester Institute of
+                    Technology. There, I deepened my understanding in areas such as Computer Networking, Big Data
+                    Analytics, and Intelligent Systems. During this period, I interned at Hewlett Packard Enterprise as
+                    a Data Engineering intern, where I was introduced to Go for the first time while working on
+                    telemetry data collection systems. The elegance and performance of the language immediately captured
+                    my interest, and I found myself thoroughly engaged in the challenges of building efficient backend
+                    systems.</p>
+                <p>After completing my internship and graduating with my Master’s degree, I joined HPE full-time as a
+                    Cloud Developer in the Platform Infrastructure Engineering team. This role gave me extensive
+                    hands-on experience in designing and building scalable applications and deploying them across both
+                    cloud environments and on-premise Kubernetes clusters. I worked on integrating crucial components
+                    such as monitoring, alerting, upgradability, logging, and backup/restore features, which are
+                    essential for enterprise-grade systems. This experience not only honed my technical skills but also
+                    taught me the importance of reliability, observability, and maintainability in distributed systems.
+                </p>
             </div>
 
             <div style="clear: both;"></div>
@@ -77,6 +94,27 @@
             </p>
         </div>
     </div>
+
+    <script>
+        const values = ["Software Engineer", "Cloud Developer", "Full Stack Developer", "Day Dreamer", "Flip",
+            "Dynamic"];
+        const flipText = document.getElementById("flipText");
+
+        function randomValue() {
+            return values[Math.floor(Math.random() * values.length)];
+        }
+
+        function flipAndChange() {
+            flipText.classList.add("flip");
+            setTimeout(() => {
+                flipText.textContent = randomValue();
+                flipText.classList.remove("flip");
+            }, 300); // Half of the transition duration
+        }
+
+        // Start flipping every 2 seconds
+        setInterval(flipAndChange, 2000);
+    </script>
 </body>
 
 </html>
