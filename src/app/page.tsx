@@ -16,7 +16,7 @@ export default function Home() {
             <div>
               <h2 className="text-2xl font-semibold">About Me</h2>
               <p className="mt-4 text-lg">
-                Hi! I'm Gautam, a software engineer with a passion for infrastructure and platform engineering, with prior experience developing web applications.
+                Hi! I'm Gautam, a software engineer with a passion for infrastructure and platform engineering.
               </p>
               <div className="mt-6">
                 <a
