@@ -44,7 +44,10 @@ export default function Home() {
                     priority
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling.style.display = 'flex';
+                      const nextSibling = e.currentTarget.nextElementSibling as HTMLElement;
+                      if (nextSibling) {
+                        nextSibling.style.display = 'flex';
+                      }
                     }}
                   />
                   {/* Fallback when image is not available */}
