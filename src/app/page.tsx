@@ -1,103 +1,62 @@
 import Image from "next/image";
+import Navigation from "@/components/Navigation";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <Navigation />
+      <div className="font-sans min-h-screen p-8 pb-20 gap-16 sm:p-20">
+      <main className="flex flex-col gap-[32px] items-center sm:items-start">
+        <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+        <section id="about" className="my-10">
+          <h2 className="text-2xl font-semibold">About Me</h2>
+          <p className="mt-4 text-lg">
+            Hi! I'm Gautam, a software engineer with a passion for creating web applications.
+          </p>
+        </section>
+
+        <section id="projects" className="my-10">
+          <h2 className="text-2xl font-semibold mb-6">Projects</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <ProjectCard
+              title="Tracky - Capstone project during MS CS @ RIT"
+              description="COLLECT previous frame details for good JSON data using inspect module, and MATCH it against future JSON data to detect errors that would otherwise go unnoticed, or make the program to fail elsewhere."
+              githubUrl="https://github.com/GautamGadipudi/tracky"
+              technologies={["Python", "Data Collection"]}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+            
+            {/* <ProjectCard
+              title="Task Management App"
+              description="A productivity app with drag-and-drop functionality, real-time collaboration, and advanced filtering. Built using Next.js and Firebase."
+              githubUrl="https://github.com/your-username/task-manager"
+              liveUrl="https://your-task-app.com"
+              technologies={["Next.js", "Firebase", "React DnD", "Tailwind CSS"]}
+            />
+            
+            <ProjectCard
+              title="Weather Dashboard"
+              description="A responsive weather application with location-based forecasts, interactive maps, and historical data visualization using React and Chart.js."
+              githubUrl="https://github.com/your-username/weather-dashboard"
+              liveUrl="https://your-weather-app.com"
+              technologies={["React", "Chart.js", "OpenWeather API", "Leaflet"]}
+            /> */}
+          </div>
+        </section>
+
+        <section id="contact" className="my-10">
+          <h2 className="text-2xl font-semibold">Contact</h2>
+          <p className="mt-4 text-lg">
+            Get in touch via email: <a href="mailto:gadipudi.gautam@gmail.com" className="text-blue-500">you@example.com</a>
+          </p>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="mt-16 text-center">
+        © 2025 Gautam Gadipudi
       </footer>
-    </div>
+      </div>
+    </>
   );
 }
