@@ -175,7 +175,7 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <ProjectCard
               title="Todo application backend"
-              description="My first vibe coding project - APIs using Gin Gonic and CI/CD using GitHub Actions"
+              description="My first vibe coding project - APIs for user auth. using JWTs, and CRUD operations for todo entity."
               githubUrl="https://github.com/GautamGadipudi/todo-backend"
               technologies={["Go", "Gin Gonic", "RESTful APIs"]}
             />
