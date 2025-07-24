@@ -15,9 +15,10 @@ export default function Home() {
             {/* Left side - About content */}
             <div>
               <h2 className="text-2xl font-semibold">About Me</h2>
-              <p className="mt-4 text-lg">
-                Hi! I'm Gautam, a software engineer with a passion for infrastructure and platform engineering.
-              </p>
+              <p className="mt-4 text-lg text-justify">
+  Hi! I'm Gautam 👋 <br /><br />
+  An infrastructure and software engineer with 5+ years of experience delivering secure, production-ready systems across cloud and on-premise environments. Skilled in implementing RESTful APIs and backend development using Java, Golang and Python, alongside expertise in Kubernetes, Linux systems, DevOps and CI/CD automation.
+</p>
               <div className="mt-6">
                 <a
                   href="/resume"
@@ -102,6 +103,8 @@ export default function Home() {
                       <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Helm</span>
                       <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">OpenEBS CSI</span>
                       <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">VWWare ESXi</span>
+                      <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">KVM</span>
+                      <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full">Microk8s</span>
                     </div>
                   </td>
                 </tr>
@@ -116,12 +119,14 @@ export default function Home() {
                       <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full">ArgoCD</span>
                       <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full">Terraform</span>
                       <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full">Jenkins</span>
+                      <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full">Bash</span>
+                      <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full">GitHub Actions</span>
                     </div>
                   </td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                   <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100">
-                    Databases
+                    Data Platforms
                   </td>
                   <td className="px-6 py-4 text-sm text-gray-600 dark:text-gray-300">
                     <div className="flex flex-wrap gap-2">
@@ -129,6 +134,7 @@ export default function Home() {
                       <span className="px-2 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-xs rounded-full">MongoDB</span>
                       <span className="px-2 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-xs rounded-full">Elasticsearch</span>
                       <span className="px-2 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-xs rounded-full">Redis</span>
+                      <span className="px-2 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 text-xs rounded-full">MS SQL Server</span>
                     </div>
                   </td>
                 </tr>
@@ -141,6 +147,10 @@ export default function Home() {
                       <span className="px-2 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full">Prometheus</span>
                       <span className="px-2 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full">Grafana</span>
                       <span className="px-2 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full">Metrics Exporters</span>
+                      <span className="px-2 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full">Alert Manager</span>
+                      <span className="px-2 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full">Humio</span>
+                      <span className="px-2 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full">Kibana</span>
+                      <span className="px-2 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 text-xs rounded-full">SonarQube</span>
                     </div>
                   </td>
                 </tr>
@@ -163,6 +173,13 @@ export default function Home() {
         <section id="projects" className="my-10">
           <h2 className="text-2xl font-semibold mb-6">Projects</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <ProjectCard
+              title="Todo application backend"
+              description="My first vibe coding project - APIs using Gin Gonic and CI/CD using GitHub Actions"
+              githubUrl="https://github.com/GautamGadipudi/todo-backend"
+              technologies={["Go", "Gin Gonic", "RESTful APIs"]}
+            />
+
             <ProjectCard
               title="K-means for movies from IMDB"
               description="Find a good k-value for a dataset, and use that to do clustering and generate some insights on it"
@@ -227,16 +244,13 @@ export default function Home() {
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 p-6">
                 <div className="flex flex-wrap gap-3">
                   <span className="px-4 py-2 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs rounded-full font-medium">
-                    🥘 Biriyani Enthusiast
+                    🍝 Foodie
                   </span>
                   <span className="px-4 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-xs rounded-full font-medium">
                     ⚽ Average FIFA Player
                   </span>
                   <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full font-medium">
-                    📸 Amateur Photography
-                  </span>
-                  <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full font-medium">
-                    📸 Amateur Photography
+                    📸 Amateur Photographer
                   </span>
                   <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-xs rounded-full font-medium">
                     🎵 Music
@@ -266,7 +280,13 @@ export default function Home() {
                     ⚽ Sunday League Player
                   </span>
                   <span className="px-4 py-2 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs rounded-full font-medium">
-                    🖱️ Pro FPS Player
+                    🎯 Pro FPS Player
+                  </span>
+                  <span className="px-4 py-2 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 text-xs rounded-full font-medium">
+                    🥘 Biriyani Enthusiast
+                  </span>
+                  <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full font-medium">
+                    🏏 Cricket lover
                   </span>
                 </div>
               </div>
