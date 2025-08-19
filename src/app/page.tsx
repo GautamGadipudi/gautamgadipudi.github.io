@@ -174,8 +174,22 @@ export default function Home() {
           <h2 className="text-2xl font-semibold mb-6">Projects</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <ProjectCard
+              title="K-means for movies from IMDB"
+              description="Find a good k-value for a dataset, and use that to do clustering and generate some insights on it"
+              githubUrl="https://github.com/GautamGadipudi/imdb-k-means"
+              technologies={["Data Analysis", "Big Data", "Python", "k-means"]}
+            />
+
+            <ProjectCard
+              title="Mars Rovers Network Implementation"
+              description="An application that manages rovers' network by creating and maintains shortest path in their routing table, and supports data transmission as TCP packets in correct sequence, and ordering."
+              githubUrl="https://github.com/GautamGadipudi/mars-rovers-data-transfer"
+              technologies={["Java", "Computer Networking", "TCP", "Docker", "Routing"]}
+            />
+
+            <ProjectCard
               title="Minesweeper (CLI, Python)"
-              description="Terminal based minesweeper game implemented in Python. BImplemented to brush up on my graph traversal fundamentals."
+              description="Terminal based minesweeper game implemented in Python. Implemented to brush up on my graph traversal fundamentals."
               githubUrl="https://github.com/GautamGadipudi/minesweeper-py-cli"
               technologies={["Python", "Graph Traversal", "Game", "CLI"]}
             />
@@ -193,13 +207,6 @@ export default function Home() {
             />
 
             <ProjectCard
-              title="K-means for movies from IMDB"
-              description="Find a good k-value for a dataset, and use that to do clustering and generate some insights on it"
-              githubUrl="https://github.com/GautamGadipudi/imdb-k-means"
-              technologies={["Data Analysis", "Big Data", "Python", "k-means"]}
-            />
-
-            <ProjectCard
               title="Packet Analyzer"
               description="An application that reads a set of packets (TCP, UDP or ICMP) and produces a detailed summary of those packets."
               githubUrl="https://github.com/GautamGadipudi/PacketAnalyzer"
@@ -211,13 +218,6 @@ export default function Home() {
               description="COLLECT previous frame details for good JSON data using inspect module, and MATCH it against future JSON data to detect errors that would otherwise go unnoticed, or make the program to fail elsewhere."
               githubUrl="https://github.com/GautamGadipudi/tracky"
               technologies={["Python", "Data Collection"]}
-            />
-            
-            <ProjectCard
-              title="Mars Rovers Network Implementation"
-              description="An application that manages rovers' network by creating and maintains shortest path in their routing table, and supports data transmission as TCP packets in correct sequence, and ordering."
-              githubUrl="https://github.com/GautamGadipudi/mars-rovers-data-transfer"
-              technologies={["Java", "Computer Networking", "TCP", "Docker", "Routing"]}
             />
             
             <ProjectCard
