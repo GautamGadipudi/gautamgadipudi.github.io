@@ -191,7 +191,7 @@ export default function Home() {
                 title="Minesweeper (CLI, Python)"
                 description="Terminal based minesweeper game implemented in Python. Implemented to brush up on my graph traversal fundamentals."
                 githubUrl="https://github.com/GautamGadipudi/minesweeper-py-cli"
-                liveUrl="https://trinket.io/python3/cf9a677b94be"
+                liveUrl="https://trinket.io/python3/aecd1b63c6d3?outputOnly=true"
                 technologies={["Python", "Graph Traversal", "Game", "CLI"]}
               />
 
