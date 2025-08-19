@@ -174,6 +174,12 @@ export default function Home() {
           <h2 className="text-2xl font-semibold mb-6">Projects</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <ProjectCard
+              title="Minesweeper (CLI, Python)"
+              description="Terminal based minesweeper game implemented in Python. BImplemented to brush up on my graph traversal fundamentals."
+              githubUrl="https://github.com/GautamGadipudi/minesweeper-py-cli"
+              technologies={["Python", "Graph Traversal", "Game", "CLI"]}
+            />
+            <ProjectCard
               title="Cricket strategy APIs for matchday"
               description="APIs for cricket match strategies"
               githubUrl="https://github.com/GautamGadipudi/cric-strat-api"
