@@ -52,12 +52,12 @@ export default function Home() {
                     }}
                   />
                   {/* Fallback when image is not available */}
-                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 text-white text-6xl font-bold" style={{display: 'none'}}>
+                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br text-white text-6xl font-bold" style={{display: 'none'}}>
                     GG
                   </div>
                 </div>
                 {/* Decorative ring around picture */}
-                <div className="absolute -inset-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full opacity-20 blur-sm"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r rounded-full opacity-20 blur-sm"></div>
               </div>
             </div>
           </div>
@@ -174,8 +174,8 @@ export default function Home() {
           <h2 className="text-2xl font-semibold mb-6">Projects</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <ProjectCard
-              title="K-means for movies from IMDB"
-              description="Find a good k-value for a dataset, and use that to do clustering and generate some insights on it"
+              title="Cluster similar movies from IMDB dataset"
+              description="Find a good k-value for a dataset, and use that to do clustering and generate some insights on it based on genre."
               githubUrl="https://github.com/GautamGadipudi/imdb-k-means"
               technologies={["Data Analysis", "Big Data", "Python", "k-means"]}
             />
@@ -193,9 +193,10 @@ export default function Home() {
               githubUrl="https://github.com/GautamGadipudi/minesweeper-py-cli"
               technologies={["Python", "Graph Traversal", "Game", "CLI"]}
             />
+
             <ProjectCard
               title="Cricket strategy APIs for matchday"
-              description="APIs for cricket match strategies"
+              description="APIs for cricket match day strategies"
               githubUrl="https://github.com/GautamGadipudi/cric-strat-api"
               technologies={["Go", "Gin Gonic", "RESTful APIs"]}
             />
@@ -207,7 +208,7 @@ export default function Home() {
             />
 
             <ProjectCard
-              title="Packet Analyzer"
+              title="Network Packet Analyzer"
               description="An application that reads a set of packets (TCP, UDP or ICMP) and produces a detailed summary of those packets."
               githubUrl="https://github.com/GautamGadipudi/PacketAnalyzer"
               technologies={["Java", "Computer Networking", "TCP", "UDP", "ICMP"]}
